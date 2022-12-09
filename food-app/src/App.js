@@ -17,7 +17,7 @@ const App = () => {
     setRecipes(result.data.hits)
 
     console.log(result);
-    setQuery('');
+   // setQuery('');
   };
 
   const onChange = e => {
@@ -25,7 +25,7 @@ const App = () => {
   };
 
   const onSubmit = e => {
-    e.prevenDefault();
+    e.preventDefault();
     getData();
   };
 
